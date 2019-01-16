@@ -26,6 +26,7 @@ export interface IApiOperationArgsBaseResponse {
     description?: string;
     type?: string;
     model?: string;
+    example?: any;
 }
 
 export interface IApiOperationArgsBaseParameters {
