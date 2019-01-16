@@ -616,6 +616,9 @@ export class SwaggerService {
                 }
                 newSwaggerOperationResponse.schema = newSwaggerOperationResponseSchema;
             }
+            if (response.example) {
+              newSwaggerOperationResponse.example = response.example;
+            }
             swaggerOperationResponses[
                 responseIndex
             ] = newSwaggerOperationResponse;
